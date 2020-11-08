@@ -6,7 +6,7 @@ Predict the average money spent on taxi rides for each region of New York per gi
 
 This problem is a supervised regression problem. Supervised because we have the actual value of the value we're trying to predict and regression because we're trying to predict a continuous variable (as opposed to categorical). 
 
-##Data Problems I Fixed
+## Data Problems I Fixed
 
 **Too-high values for total_amount**: Some values for total_amount were too high, going as high as 600,000. As these are unlikely values for a taxi fare, I decided to come up with an upper limit. The average taxi_fare was ~$16 and there were only 1,166 data points higher than $200. Compared to the 7,667,792 data points, this is not a great loss of information. Thus, I decided to remove data points with a total_amount value higher than 200.
 
