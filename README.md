@@ -1,5 +1,7 @@
 # New York Taxi Analysis
 
+The data used in this project can be found on [NYC TLC Trip Record Data](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page). For this project, we use the data on January 2019 for Yellow Taxi. 
+
 ## Problem definition 
 
 Predict the average money spent on taxi rides for each region of New York per given day and hour. 
@@ -97,3 +99,4 @@ As you can see from the plot above, the performance can be improved. We can do t
 - limiting the regions included in this analysis. Removing regions that do not normally get a lot of taxi traffic can be omitted. This might be a good action to take depending on the problem at hand (If the goal is to service all of NYC no matter what, we should keep those data points). 
 - hand selecting borough that should be included in the problem. Again, this should be decided based on the problem at hand and how this model is going to be used. But if the goal is solely to increase model performance, only including boroughs with the most transactions can increase the performance since likely most mistakes come from boroughs with fewer data points. Though this assumption should be checked before taking action. 
 - transforming the problem into a classification problem. If all we care about is to predict whether the earning at a location in an hour is considered "high" or "low", we can turn this into a classification problem which could be predicted using a Random Forest Classifier. 
+- finding the best hyperparameters using grid search.
