@@ -21,7 +21,7 @@ This problem is a supervised regression problem. Supervised because we have the 
 
 ## Original features of the model
 
-Here is the list of features that can be used for model development that came with the original data: `<['PULocationID', 'transaction_date', 'transaction_month', 'transaction_day', 'transaction_hour', 'trip_distance', 'total_amount', 'count_of_transactions']>`. 
+Here is the list of features that can be used for model development that came with the original data: `['PULocationID', 'transaction_date', 'transaction_month', 'transaction_day', 'transaction_hour', 'trip_distance', 'total_amount', 'count_of_transactions']`. 
 
 You can refer to [this document](https://www1.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf) for the meaning of each feature. 
 
@@ -34,9 +34,9 @@ Second set is location-based information. We have Location IDs per region but th
 The last set is weather-related data. I've downloaded this data from this website. It's free to use for development.
 
 Here is a list of all features used in the final model: 
-- Categorical features: `<['PULocationID', 'transaction_month', 'transaction_day', 'transaction_hour', transaction_week_day', 'weekend', 'is_holiday', 'Borough']>`
-- Numerical features: `<['temperature', 'humidity', 'wind speed', 'cloud cover', 'amount of precipitation']>`
-- Target feature: `<'total_amount'>` 
+- Categorical features: `['PULocationID', 'transaction_month', 'transaction_day', 'transaction_hour', transaction_week_day', 'weekend', 'is_holiday', 'Borough']`
+- Numerical features: `['temperature', 'humidity', 'wind speed', 'cloud cover', 'amount of precipitation']`
+- Target feature: `'total_amount'` 
 
 ## The algorithms I tried and the results
 
