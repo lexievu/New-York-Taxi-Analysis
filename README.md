@@ -34,9 +34,9 @@ Second set is location-based information. We have Location IDs per region but th
 The last set is weather-related data. I've downloaded this data from this website. It's free to use for development.
 
 Here is a list of all features used in the final model: 
-- Categorical features: ['PULocationID', 'transaction_month', 'transaction_day', 'transaction_hour', transaction_week_day', 'weekend', 'is_holiday', 'Borough']
-- Numerical features: ['temperature', 'humidity', 'wind speed', 'cloud cover', 'amount of precipitation']
-- Target feature: 'total_amount' 
+- Categorical features: `<['PULocationID', 'transaction_month', 'transaction_day', 'transaction_hour', transaction_week_day', 'weekend', 'is_holiday', 'Borough']>`
+- Numerical features: `<['temperature', 'humidity', 'wind speed', 'cloud cover', 'amount of precipitation']>`
+- Target feature: `<'total_amount'>` 
 
 ## The algorithms I tried and the results
 
